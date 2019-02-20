@@ -60,24 +60,40 @@ h1 {
 .main {
   width: 100%;
   margin-top: 20px; }
+  .main img {
+    height: 100px;
+    margin-left: 20px; }
+  .main a {
+    color: black; }
   .main .box {
     width: 80%;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 15px;
     background-color: #00B1B2;
-    text-align: center;
     margin-bottom: 40px;
-    border: 5px solid black; }
+    border: 2px solid black;
+    padding: 10px 0; }
+    .main .box p {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .main .box .title {
+      width: 100%;
+      display: flex; }
   .main .box:hover {
-    background-color: white;
-    border: 5px solid pink; }
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
     .main .box:hover .dropDown {
       display: block; }
   .main .dropDown {
+    position: absolute;
     background-color: #4988A4;
-    width: 100%;
-    border-radius: 15px;
+    width: 80%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid black;
+    margin-left: -2px;
     height: 300px;
     display: none;
     text-align: center; }
