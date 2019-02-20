@@ -13,7 +13,6 @@ body {
 .loadIn {
   position: absolute;
   background-color: rgba(255, 255, 255, 1);
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +84,10 @@ h1{
   }
   .box:hover {
     background-color: white;
+    border: 5px solid pink;
     .dropDown {
-      display: block;
+      display: table;
+      border: 5px solid red;
     }
   }
   .dropDown {
