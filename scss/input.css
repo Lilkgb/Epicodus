@@ -73,8 +73,10 @@ h1 {
     background-color: #00B1B2;
     text-align: center;
     margin-bottom: 40px; }
-  .main .box:hover .dropDown {
-    display: block; }
+  .main .box:hover {
+    background-color: white; }
+    .main .box:hover .dropDown {
+      display: block; }
   .main .dropDown {
     background-color: #4988A4;
     width: 100%;
