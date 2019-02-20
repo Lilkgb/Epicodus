@@ -1,0 +1,26 @@
+body {
+  background-color: lightgray;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .box {
+    width: 49%;
+    height: 100px;
+    background-color: pink;
+  }
+  .box:hover {
+    .dropDown {
+      display: table;
+    }
+  }
+  .dropDown {
+    background-color: red;
+    position: absolute;
+    width: 49%;
+    height: 500px;
+    display: none;
+  }
+}
