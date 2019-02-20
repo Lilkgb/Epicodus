@@ -61,8 +61,7 @@ h1 {
   width: 100%;
   margin-top: 20px; }
   .main img {
-    height: 100px;
-    margin-left: 20px; }
+    height: 100px; }
   .main a {
     color: black; }
   .main .box {
@@ -74,28 +73,35 @@ h1 {
     margin-bottom: 40px;
     border: 2px solid black;
     padding: 10px 0; }
-    .main .box p {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
     .main .box .title {
-      width: 100%;
-      display: flex; }
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; }
+      .main .box .title p {
+        display: flex;
+        align-items: center; }
   .main .box:hover {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; }
     .main .box:hover .dropDown {
       display: block; }
   .main .dropDown {
+    display: flex;
+    margin-top: 10px;
     position: absolute;
     background-color: #4988A4;
+    opacity: 0.9;
     width: 80%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 2px solid black;
     margin-left: -2px;
-    height: 300px;
     display: none;
     text-align: center; }
+    .main .dropDown a {
+      display: flex;
+      flex-direction: column; }
 
 /*# sourceMappingURL=input.css.map */
