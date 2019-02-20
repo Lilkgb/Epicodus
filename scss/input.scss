@@ -19,7 +19,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: gone 5s forwards;
+  animation: gone 2s forwards;
   transform: scale(0);
   img {
     width: 100%;
@@ -85,14 +85,14 @@ h1{
   }
   .box:hover {
     .dropDown {
-      display: table;
+      display: block;
     }
   }
   .dropDown {
     background-color: $darkBlue;
     width: 100%;
     border-radius: 15px;
-    height: 500px;
+    height: 300px;
     display: none;
     text-align: center;
   }
