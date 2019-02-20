@@ -1,27 +1,60 @@
 body {
-  background-color: lightgray;
-}
+  background-color: #FCFCFC; }
+
+.banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .banner .logo {
+    padding: 10px 10px; }
+  .banner .search {
+    padding: 10px 10px; }
+    .banner .search input {
+      margin-right: -5px;
+      height: 40px; }
+    .banner .search button {
+      height: 40px;
+      background-color: #00B1B2; }
+    .banner .search button:hover {
+      background-color: #4988A4; }
+    .banner .search button:focus {
+      outline-color: red; }
+    .banner .search input:focus {
+      outline-color: limegreen;
+      outline-width: 10px;
+      background-color: #04E8E9; }
+
+h1 {
+  margin-left: 10px; }
 
 .main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.main .box {
-  width: 49%;
-  height: 100px;
-  background-color: pink;
-}
-.main .box:hover .dropDown {
-  display: table;
-}
-.main .dropDown {
-  background-color: red;
-  position: absolute;
-  width: 49%;
-  height: 500px;
-  display: none;
-}
+  align-content: space-between;
+  margin-top: 20px; }
+  .main .box {
+    width: 85%;
+    margin: auto;
+    font-size: 50px;
+    border-radius: 15px;
+    background-color: #00B1B2;
+    text-align: center;
+    margin-bottom: 20px; }
+  .main .box:hover .dropDown {
+    display: table; }
+  .main .dropDown {
+    background-color: #4988A4;
+    width: 100%;
+    border-radius: 15px;
+    height: 500px;
+    display: none;
+    text-align: center; }
 
 /*# sourceMappingURL=input.css.map */

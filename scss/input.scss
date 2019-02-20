@@ -1,15 +1,64 @@
+$lightBlue: #00B1B2;
+$darkBlue: #4988A4;
+
 body {
-  background-color: lightgray;
+  background-color: #FCFCFC;
+}
+
+.banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    padding: 10px 10px;
+  }
+  .search {
+    padding: 10px 10px;
+    input {
+      margin-right: -5px;
+      height: 40px;
+    }
+    button {
+      height: 40px;
+      background-color: $lightBlue;
+    }
+    button:hover {
+      background-color: $darkBlue;
+    }
+    button:focus {
+      outline-color: red;
+    }
+    input:focus {
+      outline-color: limegreen;
+      outline-width: 10px;
+      background-color: #04E8E9;
+    }
+  }
+}
+
+h1{
+  margin-left: 10px;
 }
 .main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  .box {
-    width: 49%;
-    height: 100px;
-    background-color: pink;
+  align-content: space-between;
+  margin-top: 20px;
+    .box {
+    width: 85%;
+    margin: auto;
+    font-size: 50px;
+    border-radius: 15px;
+    background-color: $lightBlue;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .box:hover {
     .dropDown {
@@ -17,10 +66,11 @@ body {
     }
   }
   .dropDown {
-    background-color: red;
-    position: absolute;
-    width: 49%;
+    background-color: $darkBlue;
+    width: 100%;
+    border-radius: 15px;
     height: 500px;
     display: none;
+    text-align: center;
   }
 }
