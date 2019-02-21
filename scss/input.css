@@ -113,7 +113,10 @@ h1 {
   color: white; }
   .dark .banner {
     background-color: black;
-    color: white; }
+    color: white;
+    border-bottom: 1px solid white; }
+  .dark .box {
+    border: 2px solid white; }
   .dark input {
     background-color: lightgray; }
 

@@ -147,6 +147,10 @@ h1{
   .banner {
     background-color: black;
     color: white;
+    border-bottom: 1px solid white;
+  }
+  .box {
+    border: 2px solid white;
   }
   input {
     background-color: lightgray;
