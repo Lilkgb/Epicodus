@@ -89,6 +89,10 @@ h1{
     border: 2px solid;
     padding: 10px 0;
     animation-timing-function: ease;
+    .week {
+      color: black;
+      font-size: 40px;
+    }
     .title {
       text-align: center;
       width: 90%;
@@ -107,7 +111,6 @@ h1{
   .dropDown {
     display: flex;
     margin-top: 10px;
-    // position: absolute;
     background-color: $lightBlue;
     width: 100%;
     border-top: 1px solid white;
@@ -125,6 +128,9 @@ h1{
       color: white;
       display: flex;
       flex-direction: column;
+    }
+    .black {
+      color: black;
     }
   }
 }
@@ -165,4 +171,30 @@ h1{
   p {
     float: right;
   }
+}
+
+
+.lessonbox {
+color: rgb(74,74,74);
+width: 90%;
+margin: auto;
+font-size: 60px;
+margin-bottom: 40px;
+padding: 10px 5px;
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.codeBlock {
+  border: solid 1px grey;
+  background-color: lightgrey;
+  font-family: monospace;
+  padding: 15px;
+}
+
+.back {
+  font-size: 40px;
+  color: $lightBlue;
+  text-decoration: underline;
 }
