@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Epicodus</title>
     <link rel="icon" href="img/myLogo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -11,29 +12,27 @@
     <link rel="stylesheet" href="scss/input.css">
   </head>
   <body>
-    <div class="loadIn">
-      <div class="logo">
-        <img src="img/eLogo.png" alt="">
-      </div>
-    </div>
     <div class="banner">
       <div class="logo">
-        <img src="img/eLogo.png" alt="">
-        <button type="button" class="btn btn-dark" id="darkTheme">Dark Theme</button>
-        <button type="button" class="btn btn-light" id="lightTheme">Light Theme</button>
+        <img id="lightLogo" src="img/eLogo.png" alt="">
+        <img id="darkLogo" src="img/eLogoWhite.png" alt="">
       </div>
-      <div class="search">
+      <div class="searchMob">
+        <img id="lightSearch" src="img/search.png" alt="">
+        <img id="darkSearch" src="img/searchWhite.png" alt="">
+      </div>
+      <div class="searchDesk">
         <input type="text" name="" value="" placeholder="Search Lessons">
         <button type="button" name="button" class="btn btn-info">Search</button>
       </div>
     </div>
+    <button type="button" class="btn btn-dark" id="darkTheme">Dark Theme</button>
+    <button type="button" class="btn btn-light" id="lightTheme">Light Theme</button>
     <h1>Tracks</h1>
-
     <div class="main">
       <div class="box" onclick="">
         <div class="title">
           <p>Intro to Programming (Evening)</p>
-          <img src="img/C.png" alt="">
         </div>
         <div class="dropDown">
           <img src="img/x.png" alt="">
@@ -43,9 +42,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>C# and React</p>
-          <img src="img/cSharp.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Intro to Programming</a>
           <a href="#">C#</a>
           <a href="#">JavaScript</a>
@@ -55,9 +54,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Front End Development</p>
-          <img src="img/css.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Intro to Programming</a>
           <a href="#">User Interfaces</a>
           <a href="#">JavaScript</a>
@@ -67,9 +66,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Ruby and Rails</p>
-          <img src="img/rubyRails.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Intro to Programming</a>
           <a href="#">Ruby</a>
           <a href="#">JavaScript</a>
@@ -79,9 +78,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Ruby and React</p>
-          <img src="img/rubyReact.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Intro to Programming</a>
           <a href="#">Ruby</a>
           <a href="#">JavaScript</a>
@@ -91,9 +90,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Internship and Job Search</p>
-          <img src="img/intern.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Internship Process</a>
           <a href="#">Preparing to Apply for Jobs</a>
           <a href="#">Preparing for Job Interviews</a>
@@ -102,18 +101,18 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Workshops</p>
-          <img src="img/workshop.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">More Information Here</a>
         </div>
       </div>
       <div class="box" onclick="">
         <div class="title">
           <p>Fidgetech</p>
-          <img src="img/fidge.png" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Fidgetech - Into to Programming</a>
           <a href="#">Fidgetech - C#</a>
           <a href="#">Fidgetech - Javascript</a>
@@ -122,9 +121,9 @@
       <div class="box" onclick="">
         <div class="title">
           <p>Archived</p>
-          <img src="img/" alt="">
         </div>
         <div class="dropDown">
+          <img src="img/X.png" alt="">
           <a href="#">Intro to Programming (Online)</a>
           <a href="#">Java</a>
           <a href="#">CSS</a>
@@ -135,6 +134,10 @@
           <a href="#">Drupal</a>
           <a href="#">Android</a>
         </div>
+      </div>
+      <div class="footer">
+        <img src="img/feedback.png" alt="">
+        <p>© 2019 Epicodus</p>
       </div>
     </div>
   </body>
