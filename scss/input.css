@@ -44,7 +44,10 @@ body {
       height: 40px; }
     .banner .search button {
       height: 40px;
-      background-color: #00B1B2; }
+      background-color: #00B1B2;
+      margin-bottom: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
     .banner .search button:hover {
       background-color: #4988A4; }
     .banner .search button:focus {
@@ -72,7 +75,8 @@ h1 {
     background-color: #00B1B2;
     margin-bottom: 40px;
     border: 2px solid black;
-    padding: 10px 0; }
+    padding: 10px 0;
+    animation-timing-function: ease; }
     .main .box .title {
       text-align: center;
       width: 90%;
@@ -82,26 +86,38 @@ h1 {
       .main .box .title p {
         display: flex;
         align-items: center; }
-  .main .box:hover {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px; }
-    .main .box:hover .dropDown {
-      display: block; }
   .main .dropDown {
     display: flex;
     margin-top: 10px;
     position: absolute;
     background-color: #4988A4;
-    opacity: 0.9;
     width: 80%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 2px solid black;
     margin-left: -2px;
+    margin-top: 0px;
     display: none;
     text-align: center; }
+    .main .dropDown img {
+      align-items: flex-end; }
     .main .dropDown a {
       display: flex;
       flex-direction: column; }
+
+#lightTheme {
+  display: none; }
+
+.dark {
+  background-color: black;
+  color: white; }
+  .dark .banner {
+    background-color: black;
+    color: white; }
+  .dark input {
+    background-color: lightgray; }
+
+.light {
+  color: black; }
 
 /*# sourceMappingURL=input.css.map */

@@ -4,6 +4,11 @@
   100% {transform: scale(0); opacity: 0}
 }
 
+@keyframes moving {
+  from {}
+  to {}
+}
+
 $lightBlue: #00B1B2;
 $darkBlue: #4988A4;
 
@@ -48,6 +53,9 @@ body {
     button {
       height: 40px;
       background-color: $lightBlue;
+      margin-bottom: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
     button:hover {
       background-color: $darkBlue;
@@ -84,6 +92,7 @@ h1{
     margin-bottom: 40px;
     border: 2px solid black;
     padding: 10px 0;
+    animation-timing-function: ease;
     .title {
       text-align: center;
       width: 90%;
@@ -96,29 +105,54 @@ h1{
       }
     }
   }
-  .box:hover {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    .dropDown {
-      display: block;
-    }
-  }
+  // .box:hover {
+  //   border-bottom-left-radius: 0px;
+  //   border-bottom-right-radius: 0px;
+  //   .main {
+  //     display: none;
+  //   }
+  //   .dropDown {
+  //     display: block;
+  //     animation: moving 5s infinite;
+  //   }
+  // }
   .dropDown {
     display: flex;
     margin-top: 10px;
     position: absolute;
     background-color: $darkBlue;
-    opacity: 0.9;
     width: 80%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border: 2px solid black;
     margin-left: -2px;
+    margin-top: 0px;
     display: none;
     text-align: center;
+    img {
+      align-items: flex-end;
+    }
     a {
       display: flex;
       flex-direction: column;
     }
   }
+}
+#lightTheme {
+  display: none;
+}
+.dark {
+  background-color: black;
+  color: white;
+  .banner {
+    background-color: black;
+    color: white;
+  }
+  input {
+    background-color: lightgray;
+  }
+}
+
+.light {
+  color: black;
 }
